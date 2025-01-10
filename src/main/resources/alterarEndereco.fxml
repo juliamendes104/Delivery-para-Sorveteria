@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pedidoentrega.AlterarEnderecoController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="192.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #FFF1E7;">
+               <children>
+                  <Button fx:id="botao_carrinho" layoutY="106.0" mnemonicParsing="false" onAction="#lidarBotaoCarrinho" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Carrinho" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_sair" layoutY="346.0" mnemonicParsing="false" onAction="#lidarBotaoSair" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Sair" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_cardapio" layoutY="60.0" mnemonicParsing="false" onAction="#lidarBotaoCardapio" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Cardápio" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_meuPedido" layoutY="14.0" mnemonicParsing="false" onAction="#lidarBotaoMeuPedido" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Meu pedido" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+         </children>
+      </VBox>
+      <HBox layoutX="192.0" prefHeight="400.0" prefWidth="409.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="413.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fundo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="28.0" layoutY="32.0" prefHeight="342.0" prefWidth="355.0" style="-fx-background-color: #FFDDE9; -fx-background-radius: 10;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9078947305679321" green="0.5254020690917969" blue="0.5254020690917969" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Button fx:id="botao_confirmar" layoutX="224.0" layoutY="293.0" mnemonicParsing="false" onAction="#lidarBotaoConfirmar" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #FFF1E7;" text="Confirmar" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.7098039388656616" blue="0.7098039388656616" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="botao_voltar" layoutX="24.0" layoutY="293.0" mnemonicParsing="false" onAction="#lidarBotaoVoltar" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #FFF1E7;" text="Voltar" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.7098039388656616" blue="0.7098039388656616" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label alignment="CENTER" layoutX="22.0" layoutY="30.0" prefHeight="27.0" prefWidth="312.0" text="Alterar endereço" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_rua" layoutX="22.0" layoutY="127.0" prefHeight="34.0" prefWidth="312.0" promptText="Rua" style="-fx-border-color: #fcd5d5;">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="tf_bairro" layoutX="22.0" layoutY="176.0" prefHeight="34.0" prefWidth="166.0" promptText="Bairro" style="-fx-border-color: #fcd5d5;">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_complemento" layoutX="22.0" layoutY="223.0" prefHeight="34.0" prefWidth="312.0" promptText="Complemento (opcional)" style="-fx-border-color: #fcd5d5;">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_numero" layoutX="201.0" layoutY="176.0" prefHeight="34.0" prefWidth="133.0" promptText="Número" style="-fx-border-color: #fcd5d5;">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="22.0" layoutY="75.0" prefHeight="46.0" prefWidth="312.0" text="Preencha os dados do endereço de entrega:" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erro" layoutX="24.0" layoutY="257.0" prefHeight="27.0" prefWidth="124.0" textFill="#f51450">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

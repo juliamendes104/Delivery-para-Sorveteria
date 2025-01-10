@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pedidoentrega.MeuPedidoController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="192.0">
+            <children>
+                <Pane prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #FFF1E7;">
+                    <children>
+                        <Button fx:id="botao_carrinho" layoutY="106.0" mnemonicParsing="false" onAction="#lidarBotaoCarrinho" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Carrinho" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="botao_sair" layoutY="346.0" mnemonicParsing="false" onAction="#lidarBotaoSair" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Sair" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="botao_cardapio" layoutY="60.0" mnemonicParsing="false" onAction="#lidarBotaoCardapio" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Cardápio" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="botao_meuPedido" layoutY="14.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Meu pedido" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children></Pane>
+            </children>
+        </VBox>
+        <HBox layoutX="192.0" prefHeight="400.0" prefWidth="409.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="413.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@fundo.png" />
+                            </image>
+                        </ImageView>
+                  <Label layoutX="55.0" layoutY="83.0" text="Você ainda não tem pedidos" textFill="#00000073">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="128.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@caminhao.png" />
+                     </image>
+                  </ImageView>
+                        <Pane fx:id="pedidoPane" layoutX="28.0" layoutY="32.0" prefHeight="342.0" prefWidth="355.0" style="-fx-background-color: #FFDDE9; -fx-background-radius: 10;">
+                            <effect>
+                                <DropShadow>
+                                    <color>
+                                        <Color red="0.9078947305679321" green="0.5254020690917969" blue="0.5254020690917969" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                            <children>
+                                <Button fx:id="botao_cancelar" alignment="CENTER" layoutX="237.0" layoutY="293.0" mnemonicParsing="false" onAction="#lidarBotaoCancelar" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #FFF1E7;" text="Cancelar" textFill="#d74492">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                                    </font>
+                                    <effect>
+                                        <DropShadow>
+                                            <color>
+                                                <Color red="0.9607843160629272" green="0.7098039388656616" blue="0.7098039388656616" />
+                                            </color>
+                                        </DropShadow>
+                                    </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                                </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="-16.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@caminhao.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="182.33331298828125" layoutX="137.0" layoutY="117.0" startX="-100.0" stroke="#d74492" />
+                        <Label layoutX="37.0" layoutY="150.0" prefWidth="43.0" text="Status">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="192.0" text="Código">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="235.0" text="Total">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="statusLabel" layoutX="178.0" layoutY="151.0" textFill="#00000072">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalLabel" layoutX="178.0" layoutY="235.0" textFill="#00000073">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="codigoLabel" layoutX="178.0" layoutY="193.0" textFill="#00000073">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="botao_outrosPedidos" alignment="CENTER" layoutX="226.0" layoutY="78.0" mnemonicParsing="false" onAction="#lidarBotaoOutrosPedidos" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #FFF1E7;" text="Histórico" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.7098039388656616" blue="0.7098039388656616" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="erro" layoutX="28.0" layoutY="303.0" prefHeight="15.0" prefWidth="205.0" text="Impossível cancelar." textFill="#eb1a60">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                            </children></Pane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

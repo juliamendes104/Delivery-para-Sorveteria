@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pedidoentrega.LoggeInController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="192.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #FFF1E7;">
+               <children>
+                  <Button fx:id="botao_carrinho" layoutY="106.0" mnemonicParsing="false" onAction="#lidarBotaoCarrinho" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Carrinho" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_sair" layoutY="346.0" mnemonicParsing="false" onAction="#lidarBotaoSair" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Sair" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_cardapio" layoutY="60.0" mnemonicParsing="false" onAction="#lidarBotaoCardapio" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Cardápio" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botao_meuPedido" layoutY="14.0" mnemonicParsing="false" onAction="#lidarBotaoMeuPedido" prefHeight="46.0" prefWidth="192.0" style="-fx-background-color: #FFF1E7;" text="Meu pedido" textFill="#d74492">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+         </children>
+      </VBox>
+      <HBox layoutX="192.0" prefHeight="400.0" prefWidth="409.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="413.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fundo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="67.0" layoutY="66.0" prefHeight="274.0" prefWidth="260.0" style="-fx-background-color: #FFDDE9; -fx-background-radius: 10;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9078947305679321" green="0.5254020690917969" blue="0.5254020690917969" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="111.0" fitWidth="91.0" layoutX="85.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="label_email_user" alignment="TOP_CENTER" layoutX="22.0" layoutY="154.0" prefHeight="22.0" prefWidth="216.0" text="email" textAlignment="CENTER" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_telefone" alignment="TOP_CENTER" layoutX="22.0" layoutY="201.0" prefHeight="22.0" prefWidth="216.0" text="telefone" textAlignment="CENTER" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_nome_user" alignment="TOP_CENTER" layoutX="22.0" layoutY="105.0" prefHeight="22.0" prefWidth="216.0" text="nome" textAlignment="CENTER" textFill="#d74492">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

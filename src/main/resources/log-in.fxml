@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pedidoentrega.LogInController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="264.0" style="-fx-background-color: #FFFBF3;">
+            <children>
+                <ImageView fitHeight="250.0" fitWidth="262.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="403.0">
+            <children>
+                <ImageView fitHeight="478.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@fundo.png" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="18.0" layoutY="36.0" prefHeight="330.0" prefWidth="314.0" style="-fx-background-color: #FFF1E7; -fx-background-radius: 10;">
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color blue="0.5319809913635254" green="0.5319809913635254" red="0.9342105388641357" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                    <children>
+                        <Button fx:id="botao_entrar" layoutX="94.0" layoutY="203.0" mnemonicParsing="false" onAction="#lidarBotaoEntrar" prefHeight="38.0" prefWidth="127.0" style="-fx-background-color: #FFDDE9;" text="Entrar" textAlignment="CENTER" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                            <effect>
+                                <DropShadow>
+                                    <color>
+                                        <Color blue="0.6963328719139099" green="0.6963328719139099" red="0.9342105388641357" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                        <Button fx:id="botao_voltar" layoutX="94.0" layoutY="262.0" mnemonicParsing="false" onAction="#lidarBotaoVoltar" prefHeight="38.0" prefWidth="127.0" style="-fx-background-color: #FFDDE9;" text="Voltar" textAlignment="CENTER" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                            <effect>
+                                <DropShadow>
+                                    <color>
+                                        <Color blue="0.6963328719139099" green="0.6963328719139099" red="0.9342105388641357" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                        <PasswordField fx:id="tf_senha" layoutX="89.0" layoutY="130.0" prefHeight="38.0" prefWidth="200.0" style="-fx-border-color: #fcd5d5;" />
+                        <TextField fx:id="tf_email" layoutX="89.0" layoutY="74.0" prefHeight="38.0" prefWidth="200.0" style="-fx-border-color: #fcd5d5;">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="24.0" layoutY="82.0" prefHeight="22.0" prefWidth="59.0" text="Email" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="138.0" prefHeight="22.0" prefWidth="59.0" text="Senha" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="119.0" layoutY="20.0" prefHeight="33.0" prefWidth="78.0" text="Login" textFill="#d74492">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="erro" layoutX="25.0" layoutY="174.0" prefHeight="22.0" prefWidth="116.0" textFill="#f84c72">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="9.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
