@@ -38,9 +38,9 @@
 ## Desenvolvedores
 Este projeto foi criado com 🤍 por:
 - <a href="https://github.com/amandaprampero">
-    <img src="https://github.com/amandaprampero.png" width="80" style="border-radius: 50%;" alt="amandaprampero">
+    <img src="https://github.com/amandaprampero.png" width="80" style="border-radius: 50%;">
   </a>
   <a href="https://github.com/juliamendes104">
-    <img src="https://github.com/juliamendes104.png" width="80" style="border-radius: 50%;" alt="juliamendes104">
+    <img src="https://github.com/juliamendes104.png" width="80" style="border-radius: 50%;">
   </a>
   
