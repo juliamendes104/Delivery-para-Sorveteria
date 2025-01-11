@@ -24,6 +24,11 @@
 - **Alterar endereço:** O cliente pode escolher um local preferido para a entrega.
 - **Acompanhar pedido:** O cliente pode acompanhar o *status* do pedido em tempo real.
 - **Cancelar pedido:** O cliente pode cancelar o pedido que não saiu para ser entregue.
+<div align="center">
+  <img src="sreenshots/logar.png" width="150" alt="Imagem 1">
+  <img src="sreenshots/pedido.png" width="150" alt="Imagem 2">
+  <img src="sreenshots/cardapio.png" width="150" alt="Imagem 3">
+</div>
 
 ### Entregador
 - **Entregar o pedido:** O entregador possui acesso aos pedidos confirmados e deve mudar o *status* para `entregando`.
